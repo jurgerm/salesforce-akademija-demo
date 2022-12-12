@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Priority__c</fullName>
+    <description>Please create a pick-list field on Account object named Priority (Priority__c)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please create a pick-list field on Account object named Priority (Priority__c)</inlineHelpText>
+    <label>Priority</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Priority</valueSetName>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Normal</fullName>
+        <default>true</default>
+        <label>Normal</label>
+    </customValue>
+    <customValue>
+        <fullName>VIP</fullName>
+        <default>false</default>
+        <label>VIP</label>
+    </customValue>
+    <description>Account object named Priority should use a global values set with the following values: [Normal, VIP]. Normal must be the default value applied to any new Account record.</description>
+    <masterLabel>Priority</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

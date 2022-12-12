@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>high_value_purchases__c</fullName>
+    <description>Sukurti roll up summary laukelį high-value purchases, kuris rodytų kiek yra Closed-won Opportunity with the Amount of 100k or greater.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Number of igh-value purchases (&gt; 100 000)</inlineHelpText>
+    <label>high-value purchases</label>
+    <summaryFilterItems>
+        <field>Opportunity.Amount</field>
+        <operation>greaterOrEqual</operation>
+        <value>100000</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Opportunity.StageName</field>
+        <operation>equals</operation>
+        <value>Closed Won</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <type>Summary</type>
+</CustomField>
