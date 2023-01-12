@@ -14,15 +14,7 @@ public with sharing class DAL_ContactCases {
                 GROUP BY ContactId
         ];
         List<Case> lastContactCases = new List<Case>();
-        for (AggregateResult result: results)
-        {
-            lastContactCases.add(
-                    new Case(
-                            Id =(Id) result.get('caseId'),
-                            ContactId
-                    )
-            )
-        }
+
         return lastContactCases;
     }
 

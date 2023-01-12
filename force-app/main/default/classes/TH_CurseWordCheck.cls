@@ -7,17 +7,10 @@ public with sharing class TH_CurseWordCheck {
 
     public void addCases(List<Case> CasesToAdd)
     {
-        for (case aCase : casesToAdd)
-        {
-            if (String.isNotBlank(aCase.Description)
-            {
-                CasesToCheck.add(Case);
-            }
-        }
+
 
     }
 public void updatecases()
 {
-    for (Case aCase : CasesToCheck)
 }
 }
